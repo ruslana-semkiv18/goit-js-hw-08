@@ -21,6 +21,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  /* transition: width 0.3s ease; */
 }
 
 .gallery {
@@ -40,6 +41,14 @@ img {
   width: calc((100% - 2 * 24px) / 3);
 }
 
-.modal {
+img:hover {
+  width: 372px;
+}
+
+/* .modal {
   background-color: rgba(46, 47, 66, 0.8);
 }
+
+.modal img {
+  padding: 24px 164px 24px 164px;
+} */

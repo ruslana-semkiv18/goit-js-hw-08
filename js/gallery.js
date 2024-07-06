@@ -86,6 +86,29 @@ function createList(arr) {
     )
     .join("");
 }
+galleryList.addEventListener("click", handlerClick);
+
+function handlerClick(evt) {
+  evt.preventDefault(); 
+  if (evt.currentTarget === evt.target) {
+    return;
+   }
+    // console.log(evt);
+     // const parent = evt.target.closest(".gallery-item");
+     const parent = evt.target;
+     // console.log(parent);
+     const currentSource = parent.dataset.source;
+    //  console.log(currentSource);
+ //   const currentProduct = products.find(({ id }) => id === currentId);
+
+  const instance = basicLightbox.create(`
+  <div class="modal">
+   <img src="${currentSource}" alt="...">
+      
+   </div>
+ `);
+
+   instance.show();
+}
 
 
-// 
