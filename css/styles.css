@@ -50,3 +50,7 @@ img {
 .modal img {
   max-width: 1112px;
 }
+
+.basicLightbox {
+  background-color: rgba(46, 47, 66, 0.8);
+}
